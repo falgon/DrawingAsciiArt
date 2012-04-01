@@ -42,6 +42,7 @@ int main(const int argc,const char* argv[])
         std::string line;
 	while(std::getline(ifs,line))
                 ar.push_back(line);
+        ifs.close();
 
         const size_t max_element=max_elements(ar);
         for(std::string& str:ar){
